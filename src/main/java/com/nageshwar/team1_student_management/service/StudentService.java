@@ -1,7 +1,7 @@
-
 package com.nageshwar.team1_student_management.service;
 
 import java.util.List;
+
 import com.nageshwar.team1_student_management.dto.StudentDTO;
 
 public interface StudentService {
@@ -15,4 +15,10 @@ public interface StudentService {
     StudentDTO updateStudent(Long id, StudentDTO studentDTO);
 
     void deleteStudent(Long id);
+
+    // Search Student
+    List<StudentDTO> searchStudents(String studentName);
+
+    // Sort Students
+    List<StudentDTO> sortStudents(String field);
 }
